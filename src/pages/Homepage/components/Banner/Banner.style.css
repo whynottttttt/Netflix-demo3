@@ -3,10 +3,8 @@
     background-position: left;
     background-repeat: no-repeat;
     background-size: cover;
-
+    position: relative;
 }
-
-
 
 .banner:before {
     content: '';
@@ -18,14 +16,37 @@
 }
 
 .banner-text-area {
-    width: 36%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 100%;
-    padding: 20px;
+    padding: 150px;
+    position: relative;
 }
 
 .banner-text-area>* {
     z-index: 2;
+}
+
+/* 모바일 반응형 디자인 */
+
+@media screen and (max-width: 480px) {
+    .banner-text-area {
+        width: 100%;
+        padding: 50px;
+        text-align: center;
+    }
+
+    .banner {
+        background-position: center;
+    }
+
+    .banner-text-area h1 {
+        font-size: 1.5rem;
+    }
+
+    .banner-text-area p {
+        font-size: 0.9rem;
+    }
 }

@@ -1,10 +1,22 @@
 .App {
   text-align: center;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  max-width: 100%;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -22,6 +34,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  padding: 10px;
 }
 
 .App-link {
@@ -32,7 +45,38 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
+  }
+}
+
+/* 모바일 반응형 디자인 */
+@media screen and (max-width: 768px) {
+  .App-header {
+    padding: 15px;
+  }
+
+  .App-logo {
+    height: 30vmin;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .App-header {
+    padding: 10px;
+  }
+
+  .App-logo {
+    height: 25vmin;
+  }
+
+  .App-header {
+    font-size: calc(8px + 2vmin);
+  }
+
+  .container-fluid {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }

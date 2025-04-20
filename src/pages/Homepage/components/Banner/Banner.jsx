@@ -3,6 +3,7 @@ import { usePopularMoviesQuery } from '../../../../hooks/usePopularMovies'
 import Spinner from 'react-bootstrap/Spinner';
 import Alert from 'react-bootstrap/Alert';
 import './Banner.style.css'
+import { Container } from 'react-bootstrap';
 
 const Banner = () => {
 
@@ -25,11 +26,12 @@ const Banner = () => {
             }}
             className="banner"
         >
-            <div className="text-white banner-text-area">
-                <h1>{data?.results[0].title}</h1>
-                <p>{data?.results[0].overview}</p>
-            </div>
-            Banner
+            <Container fluid>
+                <div className="text-white banner-text-area">
+                    <h1>{data?.results[0].title}</h1>
+                    <p>{data?.results[0].overview}</p>
+                </div>
+            </Container>
         </div>
     )
 }
