@@ -29,8 +29,39 @@
     z-index: 2;
 }
 
-/* 모바일 반응형 디자인 */
+/* 중간 크기 화면을 위한 미디어 쿼리 (태블릿 및 작은 데스크톱) */
+@media screen and (max-width: 1200px) and (min-width: 481px) {
+    .banner-text-area {
+        width: 50%;
+        padding: 100px 50px;
+    }
 
+    .banner-text-area h1 {
+        font-size: 1.8rem;
+    }
+
+    .banner-text-area p {
+        font-size: 0.95rem;
+    }
+}
+
+/* 더 작은 화면을 위한 미디어 쿼리 (태블릿 작은 크기) */
+@media screen and (max-width: 768px) and (min-width: 481px) {
+    .banner-text-area {
+        width: 60%;
+        padding: 80px 40px;
+    }
+
+    .banner-text-area h1 {
+        font-size: 1.6rem;
+    }
+
+    .banner-text-area p {
+        font-size: 0.9rem;
+    }
+}
+
+/* 모바일 반응형 디자인 */
 @media screen and (max-width: 480px) {
     .banner-text-area {
         width: 100%;

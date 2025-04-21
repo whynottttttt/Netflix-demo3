@@ -3,6 +3,8 @@ import { Button, Container, Row, Col } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import './Homepage.style.css'
 import Banner from './components/Banner/Banner';
+import PopularMovieSlide from './components/PopularMovieSlide/PopularMovieSlide';
+import UpcomingMovieSlide from './components/UpcomingMovieSlide/UpcomingMovieSlide';
 
 // 1. 배너 => popular 영화를 들고와서 첫번째 아이템을 보여주자
 // 2. popular movie
@@ -11,7 +13,11 @@ import Banner from './components/Banner/Banner';
 
 const Homepage = () => {
   return (
-    <div><Banner /></div>
+    <div>
+      <Banner />
+      <PopularMovieSlide />
+      <UpcomingMovieSlide />
+    </div>
   );
 };
 

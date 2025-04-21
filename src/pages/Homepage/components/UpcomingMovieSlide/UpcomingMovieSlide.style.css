@@ -1,0 +1,10 @@
+.upcoming-carousel-container {
+    overflow: hidden;
+    height: 440px;
+    margin-bottom: 40px;
+    padding-top: 10px;
+}
+
+.upcoming-movie-slider {
+    padding: 0 5px;
+}
